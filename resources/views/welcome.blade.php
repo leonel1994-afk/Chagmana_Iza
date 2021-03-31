@@ -49,17 +49,17 @@
         var r = 0;
         var n = 1;
         var cont1 = 0;
-        do {
+        while (cont1 < vExponente) {
             r = 0;
 
             var cont2 = 0;
-                do {
+            while (cont2 < vBase){
                     r += n;
                     cont2++;
-                } while (cont2 < vBase);
+                } 
             n = r;
             cont1++;
-        } while (cont1 < vExponente);
+        } 
 
         return r;        
     }
